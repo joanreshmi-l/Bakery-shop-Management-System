@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&family=Quintessential&display=swap');
+
+:root{
+    --deepPink: #FF1493;
+    --saddlebrown: #b98d6c8e;
+    --black: black;
+}
+*{
+    font-family: 'Quicksand', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+
+}
+html::-wedkit-scrollbar{
+    width: .8rem;
+}
+html::-wedkit-scrollbar-track{
+    background: transparent;
+}
+html::-wedkit-scrollbar-thumb{
+    background-color: var(--saddlebrown);
+    border-radius: 5rem;
+}
+
+.header{
+    top: 0;right: 0;left: 0;
+    background-color: var(--saddlebrown);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    padding: 1.4rem 7%;
+    z-index: 999;
+}
+.header .logocontent{
+    display: flex;
+    align-items: center;
+}
+.header .logocontent .logo img{
+    height: 4rem;
+}
+.header .logocontent .logoname{
+    color: brown;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+.header .navbar a{
+    font-size: 2rem;
+    margin-right: 3rem;
+    color: var(--black);
+    font-weight: bold;
+}
+.header .navbar a:hover{
+    border-bottom: .1rem solid var(--black);
+    padding-bottom: .4rem;
+    color: black;
+}
+
+
+#menu-bar{
+    display: none;
+}
+
+
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/cute-birthday-instagram-captions-1584723902.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100% ;
+}
+.home .homecontent{
+    width: 50%;
+    float: left;
+    text-align: center;
+    padding: 4rem;
+}
+.home .homecontent h2{
+    font-size: 7rem;
+    font-weight: bolder;
+    margin-bottom: 2;
+    line-height: 7rem;
+    color: rgb(255, 0, 128);
+    text-shadow: rgba(224, 63, 63, 0.678);
+} 
+.home .homecontent p{
+    font-size: 1.8rem;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+}
+.home .homecontent .home-btn{
+    height: 3rem;
+}
+.home .homecontent .home-btn button{
+    font-size: 1.8rem;
+    background-color: var(--saddlebrown);
+    color: black;
+    border-radius: .7rem;
+    padding: .7rem 2.4rem;
+    cursor: pointer;
+}
+.home .homecontent .home-btn button:hover{
+    font-size: 2rem;
+}
+.about{
+    background: url(https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?size=626&ext=jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.about .about-row .box{
+    display: flex;
+    align-items: center;
+    background-color: rgb(248, 231, 234);
+    flex-wrap: wrap;
+}
+.about .about-row .box .img{
+    flex: 1 1 45rem;
+}
+.about .about-row .box .img img{
+    width: 100%;
+    height: 50%;
+    padding: 5rem;
+}
+.about .about-row .box .content{
+    flex: 1 1 45rem;
+    padding: 2rem;
+}
+.about .about-row .box .content h3{
+    font-size: 3rem;
+    color: var(--black);
+    text-shadow: var(--deepPink);
+}
+.about .about-row .box .content p{
+    font-size: 1.6rem;
+    color: brown;
+    padding: 1rem 0;
+    line-height: 1.8;
+    
+}
+.about .about-row .box .content a{
+    font-size: 2rem;
+    cursor: pointer;
+}
+.about .about-row .box .content a:hover{
+    color: var(--black);
+    text-shadow: var(--deepPink);
+}
+
+
+.swiper-button-next{
+    color: var(--black);
+}
+.swiper-button-prev{
+    color: var(--black);
+}
+
+
+
+
+
+section{
+    padding: 2rem 7%;
+}
+.heading{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    color: rgba(26, 25, 22, 0.493);
+    
+}
+
+.cake .row{
+    margin-bottom: 5rem;
+    display: flex;
+    align-items: center;
+    background-color: rgb(247, 187, 237);
+}
+.cake .cake-row .box{
+    display: flex;
+    flex-direction: column;
+    width: 45rem;
+    background-color: white;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    gap: 1.5rem;
+    border-radius: 2rem;
+    margin-right: 3rem;
+    
+}
+.cake .cake-row .img img{
+    height: 75%;
+    width: 75%;
+}
+.cake .cake-row .img img:hover{
+    transform: scale(1.1);
+}
+.cake .cake-row .content{
+    margin-bottom: 4rem;
+}
+.cake .cake-row .cake-content h3{
+    font-size: 3rem;
+    color: var(--black);
+}
+.cake .cake-row .cake-content p{
+    font-size: 1.5rem;
+    line-height: 1.6;
+    color: var(--deepPink)
+}
+.cake .cake-row .cake-content .orderNow{
+    height: 3rem;
+    margin-top: 2rem;
+
+}
+.cake .cake-row .cake-content .ordernow button{
+    font-size: 1.5rem;
+    background-color: var(--black);
+    color: white;
+    border-radius: .6rem;
+    padding: .6rem 1rem;
+    cursor: pointer;
+}
+.cake .cake-row .cake-content .ordernow button:hover{
+    font-size: 2rem;
+}
+
+.swiper-pagination-bullet{
+    background-color: var(--black);
+}
+
+
+.newsletter{
+    background: url("https://preppykitchen.com/wp-content/uploads/2019/06/Chocolate-cake-recipe-1200a.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+
+}
+.newsletter form{
+    max-width: 45rem;
+    text-align: center;
+    padding: 5rem 0;
+}
+.newsletter form h3{
+    font-size: 3rem;
+    color: rgb(19, 18, 18);
+    padding-bottom: .7rem;
+}
+.newsletter form .box{
+    width: 100%;
+    margin: .7rem 0;
+    padding: 1rem 1.2rem;
+    color: var(--black);
+    border-radius: .5rem;
+}
+.newsletter form .box2{
+    width: 30%;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    padding: .5rem .5rem;
+    color: whitesmoke;
+    background: var(--black);
+    border-radius: 3rem;
+}
+
+.review .review-row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+    
+}
+.review .review-row .box{
+    width: 50%;
+    margin-bottom: 3rem;
+    padding: 3rem;
+    border-radius: 3rem;
+    background-color: rgb(235, 233, 209);
+}
+.review .review-row .box .customer-review{
+    margin-bottom: 3rem;
+    
+}
+.review .review-row .box .customer-review p{
+    text-align: center;
+    font-size: 2rem;
+    line-height: 1.5;
+}
+.review .review-row .box .customer-info{
+    display: flex;
+    align-items: center;
+    
+}
+
+.review .review-row .box .customer-info .img img{
+    width: 7rem;
+    height: 7rem;
+    clip-path: circle(50% at 50% 50%);
+}
+.review .review-row .box .customer-info .customerName h3{
+    font-size: 2.5rem;
+}
+.review .review-row .box .customer-info .customerName p{
+    font-size: 1.5rem;
+}
+
+.footer{
+    background: url(https://toujours.co.in/wp-content/uploads/2020/12/Nutella-Cake.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(25rem, 1fr));
+    gap: 1.5rem;
+    padding: 2rem 1rem;
+
+}
+.footer .box-container .mainbox .content{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.footer .box-container .mainbox .content h1{
+    font-size: 2rem;
+    color: rgb(12, 12, 12);
+}
+.footer .box-container .mainbox p{
+    font-size: 1.7rem;
+    line-height: 1.3;
+    margin-bottom: 2rem;
+}
+.footer .box-container .mainbox h1{
+    font-size: 2.8rem;
+    color: rgba(0, 235, 252, 0.664);
+    padding: 1rem 0;
+}
+.footer .box-container .box a{
+    display: block;
+    font-size: 1.8rem;
+    color: rgba(21, 194, 247, 0.932);
+    padding: 1rem 0;
+}
+.footer .box-container .box a i{
+    padding-right: .5rem;
+}
+.footer .box-container .box a:hover i{
+    padding-right: 2rem;
+}
+.footer .share{
+    padding: 1rem 0;
+    text-align: center;
+}
+.footer .share a{
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+    font-size: 2rem;
+    color: aqua;
+    color: rgb(238, 245, 245);
+    margin: 0 .3rem;
+    border-radius: 50%;
+}
+.footer .share a:hover{
+    background: var(--saddlebrown);
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:991px){
+    html{
+        font-size: 55%;
+    }
+    .header{
+        padding: 1.3rem 3rem;
+    }
+    .home .homecontent{
+        margin-left: 0;
+        width: 80%;
+    }
+}
+
+
+@media (max-width:770px){
+    #menu-bar{
+        display: inline-block;
+    }
+    .header .navbar{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 25rem;
+        background-color: white;
+        color: var(--black);
+        height: 80vh;
+    }
+    .header .navbar.active{
+        right: 0;
+    }
+    .header .navbar a{
+        display: block;
+        font-size: 2rem;
+        color: var(--black);
+        margin: 1.5rem;
+
+    }
+    .home .homecontent{
+        margin-left: 0;
+        width: 90%;
+        max-width: 500px;
+    }
+    @media (max-width:600px){
+        html{
+            font-size: 50%;
+        }
+    }
+}
